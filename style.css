@@ -1,0 +1,329 @@
+body {
+  background-color: #f1f3f1;
+  font-family: Helvetica, sans-serif;
+  margin: 200px;
+  overflow: hidden;
+}
+
+.content {
+  display: flex;
+  flex-flow: column wrap;
+  width: 600px;
+  margin: 0 auto;
+  height: auto;
+  justify-content: space-between;
+  background-color: white;
+  box-shadow: 0px 0px 5px #bbbaba;
+  border-radius: 3px;
+}
+.contec {
+  margin: 33px 40px;
+}
+#name {
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0;
+  color: #787878;
+}
+#name > div {
+  margin: 0;
+  font-size: 20px;
+}
+#btt1 {
+  color: #46b02c;
+  border-color: #46b02c;
+  border-radius: 3px;
+  width: 120px;
+  height: 25px;
+  font-size: 12px;
+  cursor: pointer;
+  outline: 0;
+}
+#btt2 {
+  cursor: pointer;
+  outline: 0;
+}
+.inputs {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: baseline;
+  width: 100%;
+  height: auto;
+  justify-content: space-between;
+  margin-top: 40px;
+  font-size: 15px;
+  color: #787878;
+}
+.inputs > div {
+  display: flex;
+  flex-flow: column wrap;
+  width: 48%;
+  height: auto;
+}
+.inputs2 {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: baseline;
+  width: 100%;
+  height: auto;
+  justify-content: space-between;
+  margin-top: 40px;
+  font-size: 15px;
+  color: #787878;
+}
+.inputs2 > div {
+  display: flex;
+  flex-flow: column wrap;
+  width: 100%;
+  height: auto;
+}
+#input1,
+#input2 {
+  width: 100%;
+  margin: 8px 0;
+  border-radius: 3px;
+  border: 1px solid #e6e6e6;
+  outline: 0;
+  padding: 10px;
+  font-size: 14px;
+  color: #b3b3b3;
+}
+input::placeholder {
+  color: #d2d2d2;
+}
+#banner {
+  width: 100%;
+  border: 1px solid #c65353;
+  color: #c65353;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  height: 30px;
+  font-size: 14px;
+  border-radius: 3px;
+  display: none;
+}
+div#banner > label {
+  width: 100%;
+  text-align: center;
+}
+
+div#send input {
+  width: 100%;
+  height: 40px;
+  border: #46b02c;
+  color: white;
+  font-size: 16px;
+  background-color: #46b02c;
+  border-radius: 3px;
+  margin: 10px 0;
+}
+.cuadro {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #fcf9d7;
+  height: auto;
+}
+#nameResult {
+  height: 40px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  font-size: 18px;
+  color: #787878;
+}
+#resultGrade {
+  margin: 25px 0;
+  background-color: white;
+  width: 100px;
+  height: 50px;
+}
+#result1 {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+  color: #787878;
+  border: 0px;
+  outline: 0;
+}
+#result1::placeholder {
+  color: #787878;
+}
+@media only screen and (max-width: 1000px) {
+  body {
+    margin: 50px 5px;
+  }
+}
+@media only screen and (max-width: 680px) {
+  .content {
+    width: 100%;
+    max-width: 600px;
+  }
+  .contec {
+    margin: 30px 30px;
+  }
+  .inputs {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: baseline;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+    margin-top: 40px;
+    font-size: 19px;
+    color: #787878;
+  }
+  #input1,
+  #input2 {
+    width: 100%;
+    margin: 8px 0;
+    border-radius: 3px;
+    border: 1px solid #e6e6e6;
+    outline: 0;
+    padding: 10px;
+    font-size: 16px;
+    color: #b3b3b3;
+  }
+  #btt1 {
+    color: #46b02c;
+    border-color: #46b02c;
+    border-radius: 3px;
+    width: 100px;
+    height: 30px;
+    font-size: 12px;
+    cursor: pointer;
+    outline: 0;
+  }
+  #nameResult {
+    height: 50px;
+    width: 100%;
+    font-size: 16x;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    color: #787878;
+  }
+  .cuadro {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #fcf9d7;
+    height: auto;
+  }
+  div#send input {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-height: 700px) {
+  body {
+    margin: 10px 5px;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .content {
+    width: 100%;
+  }
+  .contec {
+    margin: 20px 25px;
+  }
+  .inputs {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: baseline;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+    margin-top: 40px;
+    font-size: 22px;
+    color: #787878;
+  }
+  .inputs > div {
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    height: auto;
+  }
+  #input1,
+  #input2 {
+    width: 100%;
+    margin: 8px 0;
+    border-radius: 3px;
+    border: 1px solid #e6e6e6;
+    outline: 0;
+    padding: 10px;
+    font-size: 18px;
+    color: #b3b3b3;
+  }
+  #btt1 {
+    display: none;
+  }
+  div#send input {
+    font-size: 20px;
+  }
+  #nameResult {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    font-size: 20px;
+    text-align: center;
+    align-items: flex-end;
+    justify-content: center;
+    color: #787878;
+  }
+  .cuadro {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #fcf9d7;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 300px) {
+  #name {
+    height: 80px;
+  }
+  #nameResult {
+    height: 110px;
+    width: 100%;
+    font-size: 22px;
+  }
+}
+@media only screen and (max-width: 190px) {
+  #name {
+    height: 100px;
+  }
+  div#send input {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+  }
+  #name > div {
+    margin: 0;
+    font-size: 22px;
+  }
+  #nameResult {
+    height: 130px;
+    width: 100%;
+    font-size: 22px;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 170px) {
+  #name {
+    height: 140px;
+  }
+  #nameResult {
+    height: 180px;
+  }
+}
+@media only screen and (max-width: 150px) {
+}

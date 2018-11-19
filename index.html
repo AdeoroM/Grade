@@ -1,0 +1,86 @@
+<html>
+  <head>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="text/javascript" src="script.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+    <div class="content">
+      <div class="contec">
+        <div id="name">
+          <div id="title">Get angle&ordm value with specific time.</div>
+          <div id="btt">
+            <input
+              type="button"
+              name="btt1"
+              id="btt1"
+              value="Change Layout"
+              onclick="change()"
+            />
+          </div>
+        </div>
+        <div><hr style="border: 1px solid #e6e6e6" /></div>
+        <div class="inputs" id="inputs">
+          <div id="banner"><label> Bad Request </label></div>
+          <div id="hours">
+            <label class="label"> Hours </label>
+            <input
+              type="number"
+              name="input1"
+              min="1"
+              max="12"
+              id="input1"
+              placeholder="Hours"
+              onkeypress="return isNumberKey(this)"
+            />
+          </div>
+          <div id="minutes">
+            <label class="label"> Minutes </label>
+            <input
+              type="number"
+              name="input2"
+              min="0"
+              max="59"
+              id="input2"
+              placeholder="Minutes"
+              onkeypress="return isNumberKey(this)"
+            />
+          </div>
+        </div>
+        <div id="send">
+          <input
+            type="button"
+            name="btt2"
+            id="btt2"
+            value="Send Information"
+            onclick="angle()"
+          />
+        </div>
+        <div class="cuadro" id="result">
+          <div id="nameResult">
+            <label>
+              Add <a id="aHours">hours</a> and <a id="aMinutes">minutes</a> to
+              get an angle.
+            </label>
+          </div>
+          <div id="resultGrade">
+            <input
+              type="text"
+              name="result1"
+              id="result1"
+              placeholder="0&ordm "
+              readonly
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
